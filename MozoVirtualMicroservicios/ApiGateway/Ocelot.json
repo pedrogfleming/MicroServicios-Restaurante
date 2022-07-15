@@ -1,0 +1,214 @@
+{
+  "GlobalConfiguration": {
+  },
+  "Routes": [
+    //API ORDER
+    {
+      "UpstreamPathTemplate": "/gateway/order",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/order",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7057
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/order/{id}",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/order/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7057
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/order/AddProductToOrder/{orderId}",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/order/AddProductToOrder/{orderId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7057
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/order/RemoveProductFromOrder/{orderId}",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/order/RemoveProductFromOrder/{orderId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7057
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/order/TotalFee",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/order/TotalFee",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7057
+        }
+      ]
+    },
+    //API INVENTARIO
+    {
+      "UpstreamPathTemplate": "/gateway/inventario",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/inventario",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7197
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/inventario/{id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/inventario/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7197
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/inventario/updateCost",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/inventario/updateCost",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7197
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/inventario/UpdatedOrder",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/inventario/UpdatedOrder",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7197
+        }
+      ]
+    },
+    //API LOGIN
+    {
+      "UpstreamPathTemplate": "/gateway/Login/Auth",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/Login/Auth",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7234
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Login",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/Login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7234
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Login/create",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/Login/create",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7234
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Login/Update",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/Login/update",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7234
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Login/Delete/{id}",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/Login/Delete/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7234
+        }
+      ]
+    },
+    //API MESA
+    {
+      "UpstreamPathTemplate": "/gateway/Mesa",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/Mesa",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7174
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Mesa/Abrir",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/Mesa/Abrir",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7174
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Mesa/Cerrar/{id}",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/api/Mesa/Cerrar/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7174
+        }
+      ]
+    }
+  ]
+}
